@@ -1,0 +1,48 @@
+﻿<Window x:Class="WpfApp5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="LocationOne" Click="LocationOne_Click">
+                    <Image Source="/Selection_10.png" Stretch="Fill"/>
+                </Button>
+                <Button x:Name="LocationTwo" Grid.Column="1"  Click="LocationTwo_Click">
+                    <Image Source="/Selection_13.png" Stretch="Fill"/>
+                </Button>
+                <Button x:Name="LocationThree" Grid.Column="2" Click="LocationThree_Click">
+                    <Image Source="/Selection_7.png" Stretch="Fill" />
+
+                </Button>
+            </Grid>
+            <ProgressBar x:Name="ProgresBarNegr" Grid.Row="0" Foreground="White"/>
+            <ProgressBar x:Name="ProgresBarNegrFace" Grid.Row="1" Foreground="Blue"/>
+            <ProgressBar x:Name="ProgresBarNormGay" Grid.Row="2" Foreground="Red"/>
+        </Grid>
+
+        <Button x:Name="Clicker" FontSize="18" Click="Clicker_Click" >
+            <Image Source="/Untitled_04-14-2024_04-28-49 (1).png" Stretch="Fill"/>
+        </Button>
+
+    </Grid>
+</Window>
